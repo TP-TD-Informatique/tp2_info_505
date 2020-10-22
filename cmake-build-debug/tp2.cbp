@@ -82,7 +82,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Arrete.cpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Arrete.hpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Fourmi.cpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Fourmi.hpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Ville.cpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Ville.hpp">
+			<Option target="tp2"/>
+		</Unit>
 		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/main.cpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/utils.cpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/utils.hpp">
 			<Option target="tp2"/>
 		</Unit>
 		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/CMakeLists.txt">
