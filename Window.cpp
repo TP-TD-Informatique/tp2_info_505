@@ -21,6 +21,8 @@ void Window::createIHM() {
     // Création du canvas
     _canvas = gtk_drawing_area_new();
     gtk_drawing_area_size(GTK_DRAWING_AREA(_canvas), CANVAS_WIDTH, CANVAS_HEIGHT);
+    g_signal_connect(_canvas, "realize", G_CALLBACK(realize_evt_reaction), this);
+    g_signal_connect(_canvas, "expose_event", G_CALLBACK(expose_evt_reaction), this);
     gtk_container_add(GTK_CONTAINER(mainBox), _canvas);
 
 
@@ -97,6 +99,33 @@ void Window::createIHM() {
     gtk_container_add(GTK_CONTAINER(_window), mainBox);
 }
 
+void Window::paint(cairo_t *cr) {
+    cairo_set_source_rgb(cr, 1, 1, 1);
+    cairo_rectangle(cr, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+    cairo_fill(cr);
+
+    cairo_set_line_width(cr, 5);
+    double max = 0;
+    for (auto arrete : _algorithm->getArretes()) {
+        if (arrete->getPheromone() > max) {
+            max = arrete->getPheromone();
+        }
+    }
+
+    for (auto arrete : _algorithm->getArretes()) {
+        cairo_set_source_rgba(cr, 1, 0, 0, arrete->getPheromone() * (1 / max));
+        cairo_move_to(cr, arrete->getVille1()->getX(), arrete->getVille1()->getY());
+        cairo_line_to(cr, arrete->getVille2()->getX(), arrete->getVille2()->getY());
+        cairo_stroke(cr);
+    }
+
+    cairo_set_source_rgb(cr, 0, 0, 0);
+    for (auto ville : _algorithm->getVilles()) {
+        cairo_arc(cr, ville->getX(), ville->getY(), 7, 0, 2 * M_PI);
+        cairo_fill(cr);
+    }
+}
+
 gboolean Window::okCallback(GtkWidget *widget, gpointer data) {
     auto *window = (Window *) data;
     Settings::setNbVille(window->getNbVilleInput());
@@ -108,16 +137,28 @@ gboolean Window::okCallback(GtkWidget *widget, gpointer data) {
     Settings::setSeuil(window->getSeuilInput());
     delete window->_algorithm;
     window->_algorithm = new Algorithm();
+    gtk_widget_queue_draw(window->_canvas);
     return TRUE;
 }
 
 gboolean Window::runCallback(GtkWidget *widget, gpointer data) {
     auto *window = (Window *) data;
-    if (window->_algorithm->needStep()) {
-        window->_algorithm->step();
-        gtk_label_set_text(GTK_LABEL(window->_resultLabel),
-                           utils::toString(window->_algorithm->getLongueurMin()).c_str());
-    }
+    window->_algorithm->step();
+    gtk_label_set_text(GTK_LABEL(window->_resultLabel),
+                       utils::toString(window->_algorithm->getLongueurMin()).c_str());
+    gtk_widget_queue_draw(window->_canvas);
+    return TRUE;
+}
+
+gboolean Window::realize_evt_reaction(GtkWidget *widget, gpointer data) {
+    gtk_widget_queue_draw(widget);
+    return TRUE;
+}
+
+gboolean Window::expose_evt_reaction(GtkWidget *widget, GdkEventExpose *event, gpointer data) {
+    auto *window = (Window *) data;
+    cairo_t *cr = gdk_cairo_create(widget->window);
+    window->paint(cr);
     return TRUE;
 }
 

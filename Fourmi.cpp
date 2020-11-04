@@ -30,7 +30,7 @@ Fourmi *Fourmi::deplacement(const std::vector<Arrete *> &arretes) {
 
     double sommePoids = 0;
     for (auto arrete : depart) // Calcul de la somme des poids
-        sommePoids += (pow(arrete->getPheromone(), Settings::getA()) * pow(arrete->getLongueur(), Settings::getB()));
+        sommePoids += pow(arrete->getPheromone(), Settings::getA()) * pow(arrete->getLongueur(), Settings::getB());
 
     // Calcul des poids de chaque arrêtes
     std::map<Arrete *, int> p = std::map<Arrete *, int>();

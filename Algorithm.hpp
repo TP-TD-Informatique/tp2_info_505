@@ -8,6 +8,9 @@
 #include "Fourmi.hpp"
 #include "Settings.hpp"
 
+#define CANVAS_WIDTH 800
+#define CANVAS_HEIGHT 600
+
 class Algorithm {
 public:
     Algorithm();
@@ -20,6 +23,10 @@ public:
     bool needStep() const;
 
     double getLongueurMin() const;
+
+    const std::vector<Ville *> &getVilles() const;
+
+    const std::vector<Arrete *> &getArretes() const;
 
 private:
     std::vector<Ville *> _villes;

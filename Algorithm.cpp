@@ -8,14 +8,14 @@ Algorithm::Algorithm()
           _fourmis(std::vector<Fourmi *>(Settings::getNbFourmi())) {
     // Génération des villes
     for (int i = 0; i < Settings::getNbVille(); ++i) {
-        _villes[i] = new Ville(i);
+        _villes[i] = new Ville(i, utils::randDouble(10, CANVAS_WIDTH -10), utils::randDouble(10, CANVAS_HEIGHT - 10));
     }
 
     // Génération des arrêtes
     int nbVille = 1;
     for (int i = 0; i < Settings::getNbVille(); ++i) {
         for (int j = nbVille; j < Settings::getNbVille(); ++j)
-            _arretes.push_back(new Arrete(utils::randInt(1, 100), _villes[i], _villes[j]));
+            _arretes.push_back(new Arrete(_villes[i]->distance(*_villes[j]), _villes[i], _villes[j]));
         nbVille++;
     }
 
@@ -75,4 +75,12 @@ bool Algorithm::needStep() const {
 
 double Algorithm::getLongueurMin() const {
     return _longueurMin;
+}
+
+const std::vector<Ville *> &Algorithm::getVilles() const {
+    return _villes;
+}
+
+const std::vector<Arrete *> &Algorithm::getArretes() const {
+    return _arretes;
 }

@@ -7,7 +7,7 @@
 
 int main(int argc, char **argv) {
     srand(time(nullptr));
-    Settings::setNbVille(100);
+    Settings::setNbVille(6);
     Settings::setNbFourmi(10);
     Settings::setA(1.0);
     Settings::setB(1.0);

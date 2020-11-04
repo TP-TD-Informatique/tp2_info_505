@@ -26,6 +26,10 @@ public:
 
     Arrete *depot(Fourmi const &fourmi);
 
+    const Ville *getVille1() const;
+
+    const Ville *getVille2() const;
+
 private:
     double const _longueur;
     Ville const *_ville1;

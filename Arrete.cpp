@@ -41,3 +41,11 @@ Arrete * Arrete::depot(const Fourmi &fourmi) {
 
     return this;
 }
+
+const Ville *Arrete::getVille1() const {
+    return _ville1;
+}
+
+const Ville *Arrete::getVille2() const {
+    return _ville2;
+}
