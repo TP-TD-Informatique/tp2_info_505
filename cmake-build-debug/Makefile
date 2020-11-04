@@ -143,6 +143,33 @@ tp2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/build
 .PHONY : tp2/fast
 
+Algorithm.o: Algorithm.cpp.o
+
+.PHONY : Algorithm.o
+
+# target to build an object file
+Algorithm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/Algorithm.cpp.o
+.PHONY : Algorithm.cpp.o
+
+Algorithm.i: Algorithm.cpp.i
+
+.PHONY : Algorithm.i
+
+# target to preprocess a source file
+Algorithm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/Algorithm.cpp.i
+.PHONY : Algorithm.cpp.i
+
+Algorithm.s: Algorithm.cpp.s
+
+.PHONY : Algorithm.s
+
+# target to generate assembly for a file
+Algorithm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/Algorithm.cpp.s
+.PHONY : Algorithm.cpp.s
+
 Arrete.o: Arrete.cpp.o
 
 .PHONY : Arrete.o
@@ -341,6 +368,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tp2"
+	@echo "... Algorithm.o"
+	@echo "... Algorithm.i"
+	@echo "... Algorithm.s"
 	@echo "... Arrete.o"
 	@echo "... Arrete.i"
 	@echo "... Arrete.s"

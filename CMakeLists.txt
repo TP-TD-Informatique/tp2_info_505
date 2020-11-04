@@ -3,7 +3,7 @@ project(tp2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(tp2 main.cpp Ville.cpp Ville.hpp Arrete.cpp Arrete.hpp Fourmi.cpp Fourmi.hpp utils.cpp utils.hpp Settings.cpp Settings.hpp Window.cpp Window.hpp)
+add_executable(tp2 main.cpp Ville.cpp Ville.hpp Arrete.cpp Arrete.hpp Fourmi.cpp Fourmi.hpp utils.cpp utils.hpp Settings.cpp Settings.hpp Window.cpp Window.hpp Algorithm.cpp Algorithm.hpp)
 
 find_package(GTK2 2.6 REQUIRED gtk)
 

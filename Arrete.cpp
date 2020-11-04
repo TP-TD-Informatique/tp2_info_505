@@ -17,7 +17,6 @@ bool Arrete::containsVille(const Ville &ville) {
 }
 
 Ville *Arrete::villeSuivante(const Ville &ville) {
-
     return const_cast<Ville *>(*_ville1 == ville ? _ville2 : _ville1);
 }
 

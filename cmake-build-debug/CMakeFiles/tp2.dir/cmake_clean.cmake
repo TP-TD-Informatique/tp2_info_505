@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/tp2.dir/Algorithm.cpp.o"
   "CMakeFiles/tp2.dir/Arrete.cpp.o"
   "CMakeFiles/tp2.dir/Fourmi.cpp.o"
   "CMakeFiles/tp2.dir/Settings.cpp.o"

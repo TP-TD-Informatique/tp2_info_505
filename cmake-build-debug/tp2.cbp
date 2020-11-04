@@ -102,6 +102,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Algorithm.cpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Algorithm.hpp">
+			<Option target="tp2"/>
+		</Unit>
 		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Arrete.cpp">
 			<Option target="tp2"/>
 		</Unit>
