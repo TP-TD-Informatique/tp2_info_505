@@ -13,6 +13,8 @@ Fourmi.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Fourmi.hpp
 
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Arrete.hpp
+Settings.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.hpp
 Ville.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Ville.hpp
 
@@ -27,14 +29,18 @@ map
 -
 cmath
 -
+Settings.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.hpp
 Arrete.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Arrete.hpp
 utils.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/utils.hpp
 
-/home/kevin/DATA/Univ/semestre5/info505/tp2/Ville.cpp
-Ville.hpp
-/home/kevin/DATA/Univ/semestre5/info505/tp2/Ville.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.cpp
+Settings.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.hpp
+
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.hpp
 
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Ville.hpp
 
@@ -43,6 +49,8 @@ iostream
 -
 vector
 -
+Settings.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.hpp
 Arrete.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Arrete.hpp
 Fourmi.hpp

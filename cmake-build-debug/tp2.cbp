@@ -44,6 +44,16 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/gtk-2.0"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/include/atk-1.0"/>
+					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
+					<Add directory="/usr/include/cairo"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/pango-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/gtk-2.0/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -66,6 +76,16 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/gtk-2.0"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/include/atk-1.0"/>
+					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
+					<Add directory="/usr/include/cairo"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/pango-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/gtk-2.0/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -92,6 +112,12 @@
 			<Option target="tp2"/>
 		</Unit>
 		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Fourmi.hpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.cpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.hpp">
 			<Option target="tp2"/>
 		</Unit>
 		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Ville.cpp">

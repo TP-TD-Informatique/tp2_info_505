@@ -26,6 +26,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/Compiler/GNU-C.cmake"
   "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/Compiler/GNU-CXX.cmake"
   "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/Compiler/GNU.cmake"
+  "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/FindFreetype.cmake"
+  "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/FindGTK2.cmake"
+  "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake"
+  "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageMessage.cmake"
   "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/Platform/Linux-GNU-C.cmake"
   "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/Platform/Linux-GNU-CXX.cmake"
@@ -33,6 +37,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/Platform/Linux.cmake"
   "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/Platform/UnixPaths.cmake"
   "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/ProcessorCount.cmake"
+  "/snap/clion/129/bin/cmake/linux/share/cmake-3.17/Modules/SelectLibraryConfigurations.cmake"
   )
 
 # The corresponding makefile is:

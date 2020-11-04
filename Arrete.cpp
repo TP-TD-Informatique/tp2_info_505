@@ -32,13 +32,13 @@ double Arrete::getPheromone() const {
 }
 
 Arrete * Arrete::evapore() {
-    _pheromone = C * _pheromone;
+    _pheromone = Settings::getC() * _pheromone;
 
     return this;
 }
 
 Arrete * Arrete::depot(const Fourmi &fourmi) {
-    _pheromone += Q / fourmi.longueurVoyage();
+    _pheromone += Settings::getQ() / fourmi.longueurVoyage();
 
     return this;
 }

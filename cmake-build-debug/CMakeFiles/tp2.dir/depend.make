@@ -4,20 +4,26 @@
 CMakeFiles/tp2.dir/Arrete.cpp.o: ../Arrete.cpp
 CMakeFiles/tp2.dir/Arrete.cpp.o: ../Arrete.hpp
 CMakeFiles/tp2.dir/Arrete.cpp.o: ../Fourmi.hpp
+CMakeFiles/tp2.dir/Arrete.cpp.o: ../Settings.hpp
 CMakeFiles/tp2.dir/Arrete.cpp.o: ../Ville.hpp
 CMakeFiles/tp2.dir/Arrete.cpp.o: ../utils.hpp
 
 CMakeFiles/tp2.dir/Fourmi.cpp.o: ../Arrete.hpp
 CMakeFiles/tp2.dir/Fourmi.cpp.o: ../Fourmi.cpp
 CMakeFiles/tp2.dir/Fourmi.cpp.o: ../Fourmi.hpp
+CMakeFiles/tp2.dir/Fourmi.cpp.o: ../Settings.hpp
 CMakeFiles/tp2.dir/Fourmi.cpp.o: ../Ville.hpp
 CMakeFiles/tp2.dir/Fourmi.cpp.o: ../utils.hpp
+
+CMakeFiles/tp2.dir/Settings.cpp.o: ../Settings.cpp
+CMakeFiles/tp2.dir/Settings.cpp.o: ../Settings.hpp
 
 CMakeFiles/tp2.dir/Ville.cpp.o: ../Ville.cpp
 CMakeFiles/tp2.dir/Ville.cpp.o: ../Ville.hpp
 
 CMakeFiles/tp2.dir/main.cpp.o: ../Arrete.hpp
 CMakeFiles/tp2.dir/main.cpp.o: ../Fourmi.hpp
+CMakeFiles/tp2.dir/main.cpp.o: ../Settings.hpp
 CMakeFiles/tp2.dir/main.cpp.o: ../Ville.hpp
 CMakeFiles/tp2.dir/main.cpp.o: ../main.cpp
 CMakeFiles/tp2.dir/main.cpp.o: ../utils.hpp

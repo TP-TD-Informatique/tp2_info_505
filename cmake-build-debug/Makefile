@@ -197,6 +197,33 @@ Fourmi.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/Fourmi.cpp.s
 .PHONY : Fourmi.cpp.s
 
+Settings.o: Settings.cpp.o
+
+.PHONY : Settings.o
+
+# target to build an object file
+Settings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/Settings.cpp.o
+.PHONY : Settings.cpp.o
+
+Settings.i: Settings.cpp.i
+
+.PHONY : Settings.i
+
+# target to preprocess a source file
+Settings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/Settings.cpp.i
+.PHONY : Settings.cpp.i
+
+Settings.s: Settings.cpp.s
+
+.PHONY : Settings.s
+
+# target to generate assembly for a file
+Settings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2.dir/build.make CMakeFiles/tp2.dir/Settings.cpp.s
+.PHONY : Settings.cpp.s
+
 Ville.o: Ville.cpp.o
 
 .PHONY : Ville.o
@@ -293,6 +320,9 @@ help:
 	@echo "... Fourmi.o"
 	@echo "... Fourmi.i"
 	@echo "... Fourmi.s"
+	@echo "... Settings.o"
+	@echo "... Settings.i"
+	@echo "... Settings.s"
 	@echo "... Ville.o"
 	@echo "... Ville.i"
 	@echo "... Ville.s"

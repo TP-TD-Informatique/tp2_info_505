@@ -1,10 +1,8 @@
 #ifndef TP2_ARRETE_HPP
 #define TP2_ARRETE_HPP
 
+#include "Settings.hpp"
 #include "Ville.hpp"
-
-#define Q 1
-#define C 0.7
 
 class Fourmi;
 

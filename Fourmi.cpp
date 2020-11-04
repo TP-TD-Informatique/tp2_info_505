@@ -30,12 +30,12 @@ Fourmi *Fourmi::deplacement(const std::vector<Arrete *> &arretes) {
 
     double sommePoids = 0;
     for (auto arrete : depart) // Calcul de la somme des poids
-        sommePoids += (pow(arrete->getPheromone(), A) * pow(arrete->getLongueur(), B));
+        sommePoids += (pow(arrete->getPheromone(), Settings::getA()) * pow(arrete->getLongueur(), Settings::getB()));
 
     // Calcul des poids de chaque arrêtes
     std::map<Arrete *, int> p = std::map<Arrete *, int>();
     for (auto arrete : depart) {
-        double poids = sommePoids == 0 ? 0 : (pow(arrete->getPheromone(), A) * pow(arrete->getLongueur(), B)) / sommePoids;
+        double poids = sommePoids == 0 ? 0 : (pow(arrete->getPheromone(), Settings::getA()) * pow(arrete->getLongueur(), Settings::getB())) / sommePoids;
         p.emplace(arrete, poids);
     }
 
@@ -59,7 +59,7 @@ Fourmi *Fourmi::deplacement(const std::vector<Arrete *> &arretes) {
 }
 
 bool Fourmi::parcoursComplet() const {
-    return _visitedVille.size() == NB_VILLE;
+    return _visitedVille.size() == Settings::getNbVille();
 }
 
 double Fourmi::longueurVoyage() const {

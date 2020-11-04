@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+#include "Settings.hpp"
 #include "Arrete.hpp"
 #include "Fourmi.hpp"
 #include "utils.hpp"
@@ -8,23 +9,32 @@
 
 int main() {
     srand(time(nullptr));
+    Settings::setNbVille(100);
+    Settings::setNbFourmi(10);
+    Settings::setA(1.0);
+    Settings::setB(1.0);
+    Settings::setSeuil(10.0);
+    Settings::setC(0.7);
+    Settings::setQ(1.0);
+
+    time_t t = time(nullptr);
     // Génération des villes
-    std::vector<Ville *> villes = std::vector<Ville *>(NB_VILLE);
-    for (int i = 0; i < NB_VILLE; ++i)
+    std::vector<Ville *> villes = std::vector<Ville *>(Settings::getNbVille());
+    for (int i = 0; i < Settings::getNbVille(); ++i)
         villes[i] = new Ville(i);
     // Génération des arrètes
     std::vector<Arrete *> arretes = std::vector<Arrete *>(0);
     int nbVille = 1;
-    for (int i = 0; i < NB_VILLE; ++i) {
-        for (int j = nbVille; j < NB_VILLE; ++j)
+    for (int i = 0; i < Settings::getNbVille(); ++i) {
+        for (int j = nbVille; j < Settings::getNbVille(); ++j)
             arretes.push_back(new Arrete(utils::randInt(1, 100), villes[i], villes[j]));
         nbVille++;
     }
 
     // Génération des fourmis
-    std::vector<Fourmi *> fourmis = std::vector<Fourmi *>(NB_FOURMI);
-    for (int i = 0; i < NB_FOURMI; ++i) {
-        fourmis[i] = new Fourmi(villes[utils::randInt(0, NB_VILLE)]);
+    std::vector<Fourmi *> fourmis = std::vector<Fourmi *>(Settings::getNbFourmi());
+    for (int i = 0; i < Settings::getNbFourmi(); ++i) {
+        fourmis[i] = new Fourmi(villes[utils::randInt(0, Settings::getNbVille())]);
     }
 
     double longueurMin = -1;
@@ -57,9 +67,10 @@ int main() {
                 longueurMin = fourmi->longueurVoyage();
             }
         }
-    } while (longueurMinPrec - longueurMin > 10);
+    } while (longueurMinPrec - longueurMin > Settings::getSeuil());
 
-    std::cout << "Meilleur longueur : " << longueurMin << std::endl;
+    std::cout << "Meilleure longueur : " << longueurMin << std::endl;
+    std::cout << "Temps de calcul : " << difftime(time(nullptr), t) << "s" << std::endl;
 
     // Nettoyage de la mémoire
     for (auto fourmi : fourmis) {

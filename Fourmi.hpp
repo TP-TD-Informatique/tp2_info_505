@@ -5,13 +5,9 @@
 #include <map>
 #include <cmath>
 
+#include "Settings.hpp"
 #include "Arrete.hpp"
 #include "utils.hpp"
-
-#define NB_FOURMI 1000
-#define A 1
-#define B 1
-
 
 class Fourmi {
 public:
