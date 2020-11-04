@@ -126,6 +126,12 @@
 		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Ville.hpp">
 			<Option target="tp2"/>
 		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Window.cpp">
+			<Option target="tp2"/>
+		</Unit>
+		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/Window.hpp">
+			<Option target="tp2"/>
+		</Unit>
 		<Unit filename="/home/kevin/DATA/Univ/semestre5/info505/tp2/main.cpp">
 			<Option target="tp2"/>
 		</Unit>

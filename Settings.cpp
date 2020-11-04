@@ -8,9 +8,13 @@ double Settings::_seuil = 10.0;
 double Settings::_q = 1.0;
 double Settings::_c = 0.7;
 
+// _.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-.
+
 Settings::Settings() = default;
 
 Settings::~Settings() = default;
+
+// _.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-.
 
 int Settings::getNbVille() {
     return _nbVille;

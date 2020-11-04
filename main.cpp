@@ -4,10 +4,11 @@
 #include "Settings.hpp"
 #include "Arrete.hpp"
 #include "Fourmi.hpp"
+#include "Window.hpp"
 #include "utils.hpp"
 
 
-int main() {
+int main(int argc, char **argv) {
     srand(time(nullptr));
     Settings::setNbVille(100);
     Settings::setNbFourmi(10);
@@ -18,6 +19,7 @@ int main() {
     Settings::setQ(1.0);
 
     time_t t = time(nullptr);
+
     // Génération des villes
     std::vector<Ville *> villes = std::vector<Ville *>(Settings::getNbVille());
     for (int i = 0; i < Settings::getNbVille(); ++i)
@@ -31,6 +33,9 @@ int main() {
         nbVille++;
     }
 
+    // Création de la fenêtre
+    auto *window = new Window(argc, argv);
+
     // Génération des fourmis
     std::vector<Fourmi *> fourmis = std::vector<Fourmi *>(Settings::getNbFourmi());
     for (int i = 0; i < Settings::getNbFourmi(); ++i) {
@@ -38,7 +43,7 @@ int main() {
     }
 
     double longueurMin = -1;
-    double longueurMinPrec = longueurMin;
+    double longueurMinPrec;
 
     do {
         longueurMinPrec = longueurMin;
@@ -82,6 +87,7 @@ int main() {
     for (auto ville : villes) {
         delete ville;
     }
+    delete window;
 
     return 0;
 }
