@@ -4,7 +4,7 @@
 #include "Settings.hpp"
 #include "Ville.hpp"
 
-class Fourmi;
+class Fourmi; // Pour résoudre les problèmes de l'inclusion cyclique
 
 class Arrete {
 public:

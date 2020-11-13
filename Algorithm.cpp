@@ -72,8 +72,7 @@ void Algorithm::step() {
 }
 
 bool Algorithm::needStep() const {
-    return true;
-    //return _longueurMinPrec - _longueurMin > Settings::getSeuil();
+    return _longueurMinPrec - _longueurMin > Settings::getSeuil();
 }
 
 double Algorithm::getLongueurMin() const {

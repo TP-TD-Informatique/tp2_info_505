@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Algorithm.cpp
+Algorithm.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Algorithm.hpp
+
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Algorithm.hpp
 vector
 -
@@ -18,11 +22,21 @@ Fourmi.hpp
 Settings.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.hpp
 
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Arrete.cpp
+Arrete.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Arrete.hpp
+Fourmi.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Fourmi.hpp
+
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Arrete.hpp
 Settings.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.hpp
 Ville.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Ville.hpp
+
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Fourmi.cpp
+Fourmi.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Fourmi.hpp
 
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Fourmi.hpp
 vector
@@ -43,6 +57,10 @@ utils.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Ville.hpp
 cmath
 -
+
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Window.cpp
+Window.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Window.hpp
 
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Window.hpp
 gtk/gtk.h
