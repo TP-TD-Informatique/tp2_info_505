@@ -22,6 +22,8 @@ public:
 
     double longueurVoyage() const;
 
+    void reset();
+
 public:
     const std::vector<Arrete *> &getArretes() const;
 

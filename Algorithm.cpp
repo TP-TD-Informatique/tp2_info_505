@@ -40,6 +40,9 @@ Algorithm::~Algorithm() {
 // _.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-.
 
 void Algorithm::step() {
+    for (auto fourmi : _fourmis)
+        fourmi->reset();
+
     _longueurMinPrec = _longueurMin;
 
     for (auto fourmi : _fourmis) { // Pour chaque fourmi

@@ -70,6 +70,11 @@ double Fourmi::longueurVoyage() const {
     return longueur;
 }
 
+void Fourmi::reset() {
+    _visitedVille = std::vector<Ville *>(0);
+    _arretes = std::vector<Arrete *>(0);
+}
+
 // _.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-.
 
 const std::vector<Arrete *> &Fourmi::getArretes() const {

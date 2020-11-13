@@ -44,10 +44,6 @@ utils.hpp
 cmath
 -
 
-/home/kevin/DATA/Univ/semestre5/info505/tp2/Window.cpp
-Window.hpp
-/home/kevin/DATA/Univ/semestre5/info505/tp2/Window.hpp
-
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Window.hpp
 gtk/gtk.h
 -
@@ -59,6 +55,16 @@ Algorithm.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/Algorithm.hpp
 utils.hpp
 /home/kevin/DATA/Univ/semestre5/info505/tp2/utils.hpp
+
+/home/kevin/DATA/Univ/semestre5/info505/tp2/main.cpp
+iostream
+-
+vector
+-
+Settings.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Settings.hpp
+Window.hpp
+/home/kevin/DATA/Univ/semestre5/info505/tp2/Window.hpp
 
 /home/kevin/DATA/Univ/semestre5/info505/tp2/utils.hpp
 random
